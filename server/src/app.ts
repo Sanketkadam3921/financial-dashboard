@@ -10,9 +10,12 @@ const app = express();
 
 // Middlewares
 app.use(cors({
-    origin: process.env.NODE_ENV === 'production' ? 'your-frontend-domain.com' : 'http://localhost:3000',
+    origin: process.env.NODE_ENV === 'production'
+        ? 'https://financial-dashboard-frontend-mocha.vercel.app'
+        : 'http://localhost:3000',
     credentials: true
 }));
+
 app.use(express.json());
 
 // Routes

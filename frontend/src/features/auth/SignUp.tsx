@@ -17,11 +17,11 @@ const SignupModal: React.FC<SignupModalProps> = ({ visible, onClose }) => {
     const onFinish = async (values: any) => {
         setLoading(true);
         try {
-            const res = await axios.post('http://localhost:5000/api/auth/signup', values);
+            const res = await axios.post('https://financial-dashboard-z0nq.onrender.com/api/auth/signup', values);
             message.success(res.data.message);
 
             // Optional: Log them in directly after signup
-            const loginRes = await axios.post('http://localhost:5000/api/auth/login', {
+            const loginRes = await axios.post('https://financial-dashboard-z0nq.onrender.com/api/auth/login', {
                 email: values.email,
                 password: values.password,
             });
