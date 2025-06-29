@@ -10,11 +10,14 @@ const app = express();
 
 // Middlewares
 app.use(cors({
-    origin: process.env.NODE_ENV === 'production'
-        ? 'https://financial-dashboard-frontend-mocha.vercel.app'
-        : 'http://localhost:3000',
-    credentials: true
+    origin: [
+        'http://localhost:3000',
+        'http://localhost:5173',
+        'https://financial-dashboard-frontend-mocha.vercel.app'
+    ],
+    credentials: true,
 }));
+
 
 app.use(express.json());
 
