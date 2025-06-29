@@ -1,69 +1,40 @@
-# React + TypeScript + Vite
+#  Frontend – Financial Analytics Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend of the Financial Analytics Dashboard built using **React.js**, **TypeScript**, **Vite**, and **Recharts** for data visualization. It provides an interactive UI for users to analyze and manage financial transactions.
 
-Currently, two official plugins are available:
+You can access the frontend from this url -- **Frontend**: [https://financial-dashboard-frontend-mocha.vercel.app](https://financial-dashboard-frontend-mocha.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+##  Setup Instructions
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+```bash
+# 1. Navigate to this folder
+cd frontend
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# 2. Install dependencies
+npm install
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# 3. Run the development server
+npm run dev
 ```
+The app will run locally at:
+http://localhost:5173
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+##  Frontend Tech Stack
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Framework**: React.js (v19) + TypeScript
+- **Build Tool**: Vite (fast dev & optimized build)
+- **UI Libraries**:
+  - Material UI (`@mui/material`)
+  - Ant Design (`antd`)
+  - Emotion (`@emotion/react`, `@emotion/styled`)
+- **Routing**: React Router DOM (v7)
+- **Charts**: Recharts
+- **HTTP Client**: Axios
+- **Live Search**: Lodash Debounce
+- **Toasts/Alerts**: React Toastify
+- **Icons**: MUI Icons + Ant Design Icons
+- **Linting & Quality**:
+  - ESLint, `@typescript-eslint`, `eslint-plugin-react-hooks`
