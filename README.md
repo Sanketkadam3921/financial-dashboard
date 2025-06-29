@@ -14,7 +14,7 @@ A professional full-stack web application for financial analysts to visualize, f
 
 ##  Demo Video
 
-[ Watch the Demo](#) <!-- Replace with actual video link when available -->
+[https://www.loom.com/share/a0923a3ac7bc4b22901d6732987b9271?sid=6596a976-ad95-4eea-98f4-d3988ff9ef0d](https://www.loom.com/share/a0923a3ac7bc4b22901d6732987b9271?sid=6596a976-ad95-4eea-98f4-d3988ff9ef0d) <!-- Replace with actual video link when available -->
 
 ---
 
