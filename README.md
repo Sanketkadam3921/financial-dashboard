@@ -108,7 +108,7 @@ A professional full-stack web application for financial analysts to visualize, f
 All protected routes require the following header:
 
 Authorization: Bearer <your_jwt_token>
----
+
 ##  Docker Setup (Backend Only)
 
 ###  Prerequisites
