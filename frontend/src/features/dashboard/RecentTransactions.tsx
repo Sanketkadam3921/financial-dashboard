@@ -23,7 +23,7 @@ const RecentTransactions: React.FC = () => {
         const fetchRecent = async () => {
             try {
                 const token = localStorage.getItem('token');
-                const res = await axios.get('http://localhost:5000/api/transactions', {
+                const res = await axios.get('https://financial-dashboard-z0nq.onrender.com/api/transactions', {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },

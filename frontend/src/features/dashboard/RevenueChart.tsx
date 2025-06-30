@@ -30,7 +30,7 @@ const RevenueChart: React.FC = () => {
             try {
                 const token = localStorage.getItem('token');
                 const res = await axios.get<{ monthlyData: MonthlySummary[] }>(
-                    'http://localhost:5000/api/transactions/summary',
+                    'https://financial-dashboard-z0nq.onrender.com/api/transactions/summary',
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,

@@ -19,7 +19,7 @@ const PersonalPage: React.FC = () => {
         (async () => {
             try {
                 const token = localStorage.getItem('token');
-                const trxRes = await axios.get('http://localhost:5000/api/transactions', {
+                const trxRes = await axios.get('https://financial-dashboard-z0nq.onrender.com/api/transactions', {
                     headers: { Authorization: `Bearer ${token}` },
                     params: { page: 1, limit: 5 }
                 });

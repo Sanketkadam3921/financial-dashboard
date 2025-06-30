@@ -108,7 +108,6 @@ const Sidebar: React.FC = () => {
                         </span>
                     ),
                 }))}
-                // active & hover style override
                 theme="light"
             />
         </Sider>

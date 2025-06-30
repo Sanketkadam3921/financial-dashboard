@@ -36,7 +36,7 @@ const ExportModal: React.FC = () => {
             const token = localStorage.getItem('token');
 
             const res = await axios.post(
-                'http://localhost:5000/api/transactions/export',
+                'https://financial-dashboard-z0nq.onrender.com/api/transactions/export',
                 { columns: selectedFields },
                 {
                     headers: {
