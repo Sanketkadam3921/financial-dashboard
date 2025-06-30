@@ -16,10 +16,10 @@ const WalletPage: React.FC = () => {
             try {
                 const token = localStorage.getItem('token');
                 const [sumRes, trxRes] = await Promise.all([
-                    axios.get('http://localhost:5000/api/transactions/summary', {
+                    axios.get('https://financial-dashboard-z0nq.onrender.com/api/transactions/summary', {
                         headers: { Authorization: `Bearer ${token}` }
                     }),
-                    axios.get('http://localhost:5000/api/transactions', {
+                    axios.get('https://financial-dashboard-z0nq.onrender.com/api/transactions', {
                         headers: { Authorization: `Bearer ${token}` },
                         params: { page: 1, limit: 5 }
                     })

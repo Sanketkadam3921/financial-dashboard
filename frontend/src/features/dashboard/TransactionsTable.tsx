@@ -56,7 +56,7 @@ const TransactionsTable: React.FC = () => {
 
         try {
             const token = localStorage.getItem('token');
-            const res = await axios.get('http://localhost:5000/api/transactions', {
+            const res = await axios.get('https://financial-dashboard-z0nq.onrender.com/api/transactions', {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -89,7 +89,6 @@ const TransactionsTable: React.FC = () => {
         }
     };
 
-    // Create debounced search function that persists across renders
     const debouncedSearch = useMemo(
         () => debounce((val: string) => {
             setPagination((prev) => ({ ...prev, currentPage: 1 }));
@@ -98,19 +97,18 @@ const TransactionsTable: React.FC = () => {
         []
     );
 
-    // Handle input change - updates UI immediately and triggers debounced API call
+
     const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
         const value = e.target.value;
-        setInputValue(value); // Update UI immediately
-        debouncedSearch(value); // Trigger debounced API call
+        setInputValue(value);
+        debouncedSearch(value);
     }, [debouncedSearch]);
 
-    // Handle search button click or enter key
     const handleSearchSubmit = useCallback((val: string) => {
         setInputValue(val);
         setSearchText(val);
         setPagination((prev) => ({ ...prev, currentPage: 1 }));
-        debouncedSearch.cancel(); // Cancel any pending debounced calls
+        debouncedSearch.cancel();
     }, [debouncedSearch]);
 
     useEffect(() => {
@@ -197,9 +195,9 @@ const TransactionsTable: React.FC = () => {
                         <Search
                             placeholder="Search by ID, category..."
                             allowClear
-                            value={inputValue} // Bind to inputValue for immediate UI updates
-                            onChange={handleInputChange} // Handle input changes
-                            onSearch={handleSearchSubmit} // Handle search button/enter
+                            value={inputValue}
+                            onChange={handleInputChange}
+                            onSearch={handleSearchSubmit}
                             style={{ width: 200 }}
                         />
                         <Select

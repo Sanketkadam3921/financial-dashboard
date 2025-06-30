@@ -51,7 +51,7 @@ const AnalyticsPage: React.FC = () => {
             try {
                 setLoading(true);
                 const token = localStorage.getItem('token');
-                const res = await axios.get('http://localhost:5000/api/transactions/summary', {
+                const res = await axios.get('https://financial-dashboard-z0nq.onrender.com/api/transactions/summary', {
                     headers: { Authorization: `Bearer ${token}` },
                     params: { year }
                 });

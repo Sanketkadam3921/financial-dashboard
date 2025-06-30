@@ -71,6 +71,24 @@ const HomePage: React.FC = () => {
                         </Text>
                     </Box>
 
+                    {/* Info Message */}
+                    <Box
+                        mb={4}
+                        p={2}
+                        bgcolor="#fafafa"
+                        border="1px solid #d9d9d9"
+                        borderRadius={8}
+                        fontSize="0.9rem"
+                        color="#555"
+                        textAlign="left"
+                    >
+                        <b>Demo Credentials:</b><br />
+                        <span>Login with:</span><br />
+                        <code>example@gmail.com</code><br />
+                        <span>Password:</span> <code>12345678</code><br /><br />
+                        Or sign up with your own email.
+                    </Box>
+
                     <Button
                         type="primary"
                         block
