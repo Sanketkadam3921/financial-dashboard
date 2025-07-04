@@ -10,11 +10,6 @@ A professional full-stack web application for financial analysts to visualize, f
 - **Backend**: [https://financial-dashboard-z0nq.onrender.com](https://financial-dashboard-z0nq.onrender.com)
 - **Postman link**: [https://www.postman.com/sanket3921/workspace/sanket/collection/24738996-dae72959-b5de-4b7a-b498-f7ef3b258ed6?action=share&creator=24738996&active-environment=24738996-b7d2c08c-7e44-43da-a273-f26267f5d823](https://www.postman.com/sanket3921/workspace/sanket/collection/24738996-dae72959-b5de-4b7a-b498-f7ef3b258ed6?action=share&creator=24738996&active-environment=24738996-b7d2c08c-7e44-43da-a273-f26267f5d823)
 
----
-
-##  Demo Video
-
-[https://www.loom.com/share/a0923a3ac7bc4b22901d6732987b9271?sid=6596a976-ad95-4eea-98f4-d3988ff9ef0d](https://www.loom.com/share/a0923a3ac7bc4b22901d6732987b9271?sid=6596a976-ad95-4eea-98f4-d3988ff9ef0d) <!-- Replace with actual video link when available -->
 
 ---
 
