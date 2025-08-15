@@ -30,6 +30,6 @@ export const authenticate = (
         next();  // Don't return anything here
     } catch (err) {
         res.status(401).json({ message: 'Invalid token' });
-        // No return needed here either
+        // No return needed here either 
     }
 };
