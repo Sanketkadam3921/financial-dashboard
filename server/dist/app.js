@@ -20,7 +20,7 @@ app.use(express_1.default.json());
 app.use('/api/auth', auth_routes_1.default);
 app.use('/api/transactions', transaction_routes_1.default);
 // Health check
-app.get('/', (_req, res) => {
+app.get('/', (_req, res) => { 
     res.json({ message: 'Financial Analytics API is running' });
 });
 // 404 fallback
