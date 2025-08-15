@@ -19,7 +19,7 @@ const startServer = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         yield (0, db_1.default)();
         app_1.default.listen(PORT, () => {
-            console.log(`🚀 Server is running on http://localhost:${PORT}`);
+            console.log(`🚀 Server is running on http://localhost:${PORT}`); 
         });
     }
     catch (error) {
