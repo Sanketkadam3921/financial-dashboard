@@ -4,7 +4,7 @@ import { Layout } from 'antd';
 import Sidebar from '../components/Sidebar/Sidebar';
 import HeaderBar from '../components/Header/HeaderBar';
 import { Outlet } from 'react-router-dom';
-
+ 
 const { Content } = Layout;
 
 const MainLayout: React.FC = () => {
