@@ -18,7 +18,7 @@ import debounce from 'lodash.debounce';
 
 const { Search } = Input;
 const { Option } = Select;
-const { Title } = Typography;
+const { Title } = Typography; 
 
 interface Transaction {
     _id: string;
