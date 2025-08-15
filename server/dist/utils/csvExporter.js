@@ -24,7 +24,7 @@ const createCSV = (transactions, columns) => __awaiter(void 0, void 0, void 0, f
             columns.forEach((col) => {
                 let value = transaction[col];
                 // Format date fields
-                if (col === 'date' && value instanceof Date) {
+                if (col === 'date' && value instanceof Date) { 
                     value = value.toISOString().split('T')[0];
                 }
                 // Format amount
