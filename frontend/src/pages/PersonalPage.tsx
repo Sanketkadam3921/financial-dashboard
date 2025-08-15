@@ -6,7 +6,7 @@ import {
 } from 'antd';
 import axios from 'axios';
 import moment from 'moment';
-
+ 
 const { Title, Text } = Typography;
 
 const PersonalPage: React.FC = () => {
