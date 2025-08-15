@@ -7,7 +7,7 @@ import moment from 'moment';
 const { Title, Text } = Typography;
 const { Search } = Input;
 
-interface Message {
+interface Message { 
     id: string;
     title: string;
     content: string;
