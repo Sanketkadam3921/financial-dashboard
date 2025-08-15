@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const { Text, Title } = Typography;
 
+
 const fieldOptions = [
     { label: 'Date', value: 'date' },
     { label: 'Amount', value: 'amount' },
