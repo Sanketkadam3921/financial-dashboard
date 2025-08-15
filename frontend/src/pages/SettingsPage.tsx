@@ -10,7 +10,7 @@ import {
     Select,
     message,
 } from 'antd';
-import { SettingOutlined } from '@ant-design/icons';
+import { SettingOutlined } from '@ant-design/icons'; 
 
 const { Title, Text } = Typography;
 const { Option } = Select;
