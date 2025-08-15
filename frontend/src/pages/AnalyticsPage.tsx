@@ -26,7 +26,7 @@ import {
     Line,
     PieChart,
     Pie,
-    Cell,
+    Cell, 
     ResponsiveContainer
 } from 'recharts';
 import axios from 'axios';
