@@ -8,7 +8,7 @@ const cors_1 = __importDefault(require("cors"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const auth_routes_1 = __importDefault(require("./routes/auth.routes"));
 const transaction_routes_1 = __importDefault(require("./routes/transaction.routes"));
-dotenv_1.default.config();
+dotenv_1.default.config(); 
 const app = (0, express_1.default)();
 // Middlewares
 app.use((0, cors_1.default)({
