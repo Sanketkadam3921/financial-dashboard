@@ -10,7 +10,7 @@ export interface ITransaction extends Document {
     description?: string;
 }
 
-const TransactionSchema = new Schema<ITransaction>(
+const TransactionSchema = new Schema<ITransaction>( 
     {
         date: {
             type: Date,
