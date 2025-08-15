@@ -8,7 +8,7 @@ import SignupModal from '../features/auth/SignUp';
 const { Title, Text } = Typography;
 
 const HomePage: React.FC = () => {
-    const [isLoginVisible, setLoginVisible] = useState(false);
+    const [isLoginVisible, setLoginVisible] = useState(false); 
     const [isSignupVisible, setSignupVisible] = useState(false);
 
     return (
