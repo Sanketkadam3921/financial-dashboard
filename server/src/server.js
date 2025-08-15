@@ -22,7 +22,7 @@ const startServer = () => __awaiter(void 0, void 0, void 0, function* () {
             console.log(`🚀 Server is running on http://localhost:${PORT}`);
         });
     }
-    catch (error) {
+    catch (error) { 
         console.error('Failed to start server:', error);
         process.exit(1);
     }
