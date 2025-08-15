@@ -24,6 +24,7 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ onSearch }) => {
 
     return (
         <div
+            
             style={{
                 backgroundColor: '#ffffff',
                 padding: '16px 24px',
@@ -34,7 +35,7 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ onSearch }) => {
         >
             <Row justify="space-between" align="middle">
                 <Col>
-                    <Title level={3} style={{ margin: 0, color: '#1f1f1f' }}>Dashboard</Title>
+                    <Title level={3} style={{ margin: 0, color: '#1f1f1f' }}>Dashboard.</Title>
                 </Col>
                 <Col>
                     <Space size="large">
