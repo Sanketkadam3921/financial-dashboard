@@ -5,7 +5,7 @@ import { createCSV } from '../utils/csvExporter';
 
 const router = Router();
 
-// GET /api/transactions
+// GET /api/transactions 
 router.get('/', authenticate, async (req: AuthRequest, res: Response): Promise<void> => {
     try {
         const {
