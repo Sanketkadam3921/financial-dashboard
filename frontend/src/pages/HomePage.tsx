@@ -3,7 +3,7 @@ import { Row, Col, Card, Typography, Button } from 'antd';
 import { Box } from '@mui/material';
 import financebanner from '../assets/finance-banner.jpeg';
 import LoginModal from '../features/auth/Login';
-import SignupModal from '../features/auth/SignUp';
+import SignupModal from '../features/auth/SignUp'; 
 
 const { Title, Text } = Typography;
 
