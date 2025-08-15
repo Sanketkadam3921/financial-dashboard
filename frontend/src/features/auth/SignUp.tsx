@@ -9,7 +9,7 @@ interface SignupModalProps {
     visible: boolean;
     onClose: () => void;
 }
-
+ 
 const SignupModal: React.FC<SignupModalProps> = ({ visible, onClose }) => {
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate(); // 👈 Add this
