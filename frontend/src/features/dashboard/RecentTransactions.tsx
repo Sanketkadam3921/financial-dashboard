@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom'; // ✅ Add this
 
 const { Text } = Typography;
-
+ 
 interface Transaction {
     _id: string;
     amount: number;
