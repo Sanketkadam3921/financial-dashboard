@@ -3,7 +3,7 @@ import React from 'react';
 import { Card, Row, Col, Typography, Breadcrumb } from 'antd';
 import TransactionsTable from '../features/dashboard/TransactionsTable';
 
-const { Title } = Typography;
+const { Title } = Typography; 
 
 const TransactionsPage: React.FC = () => (
     <>
