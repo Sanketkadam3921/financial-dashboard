@@ -12,7 +12,7 @@ const WalletPage: React.FC = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        (async () => {
+        (async () => { 
             try {
                 const token = localStorage.getItem('token');
                 const [sumRes, trxRes] = await Promise.all([
