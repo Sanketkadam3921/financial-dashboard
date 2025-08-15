@@ -89,7 +89,7 @@ const Sidebar: React.FC = () => {
                     borderBottom: '1px solid #d6e4ff',
                 }}
             >
-                FinanceApp
+                FinanceApp-
             </div>
 
             <Menu
