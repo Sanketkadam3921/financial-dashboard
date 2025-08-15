@@ -13,7 +13,7 @@ RUN npm install
 # Copy the rest of the project files
 COPY . .
 
-# Build the TypeScript code
+# Build the TypeScript code 
 RUN npm run build
 
 # Expose the port your app runs on
