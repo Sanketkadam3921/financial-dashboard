@@ -7,7 +7,7 @@ import transactionRoutes from './routes/transaction.routes';
 dotenv.config();
 
 const app = express();
-
+ 
 // Middlewares
 app.use(cors({
     origin: [
